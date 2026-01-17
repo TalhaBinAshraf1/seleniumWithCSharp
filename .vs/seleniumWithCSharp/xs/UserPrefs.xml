@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{AB1B11AB-76DF-45C5-8E0A-3B02E6D9104E}|Default">
+  <MonoDevelop.Ide.ItemProperties.seleniumWithCSharp PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../.Trash/seleniumWithCSharp/UnitTest1.cs">
+    <Files>
+      <File FileName="UnitTest1.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="seleniumWithCSharp" expanded="True">
+            <Node name="seleniumWithCSharp" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="seleniumWithCSharp" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
