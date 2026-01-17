@@ -1,2 +1,2 @@
 # selenium_With_C#
-This is a Showcase Repository  for Selenium with C# for e-com platform Daraz. 
+This Repository is created to automate e-com platform Daraz by using Selenium with C# for. 
