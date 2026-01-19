@@ -1,6 +1,6 @@
-﻿
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
 
 namespace AutomationTask;
 
@@ -16,7 +16,6 @@ public class Tests
         // Maximize the Window
         driver.Manage().Window.Maximize();
     }
-
 
     [Test]
     public void Test1()
@@ -34,10 +33,20 @@ public class Tests
         Assert.Pass();
     }
 
+    //[Test]
+    //public void DropwodnTest() {
+
+    //    //SelectElement = ctElement(driver.FindElement(By.CssSelector(""));
+
+
+
+    //}
+
     [TearDown]
     public void CloseDriver()
     {
-        // Driver close
+        // Driver quit
         driver.Quit();
     }
+
 }

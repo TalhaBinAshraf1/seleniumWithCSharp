@@ -8,6 +8,18 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
+      "DotNetSeleniumExtras.PageObjects.Core/4.14.1": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.14.1"
+        },
+        "compile": {
+          "lib/net6.0/SeleniumExtras.PageObjects.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/SeleniumExtras.PageObjects.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/17.1.0": {
         "type": "package",
         "compile": {
@@ -431,7 +443,23 @@
           "build/netcoreapp2.1/NUnit3TestAdapter.props": {}
         }
       },
-      "Selenium.WebDriver/4.39.0": {
+      "Selenium.Support/4.40.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.40.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.40.0": {
         "type": "package",
         "dependencies": {
           "System.Text.Json": "8.0.5"
@@ -1120,6 +1148,22 @@
         "coverlet-icon.png",
         "coverlet.collector.3.1.2.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "DotNetSeleniumExtras.PageObjects.Core/4.14.1": {
+      "sha512": "LwKjGyJKwaGO0pmPaWx0kOtJoDiKKYMpundXF3AwqqBcOI86gumvUpjqq/giL8zatUXdecL89wb0U/KZh03p7g==",
+      "type": "package",
+      "path": "dotnetseleniumextras.pageobjects.core/4.14.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "dotnetseleniumextras.pageobjects.core.4.14.1.nupkg.sha512",
+        "dotnetseleniumextras.pageobjects.core.nuspec",
+        "lib/net462/SeleniumExtras.PageObjects.dll",
+        "lib/net6.0/SeleniumExtras.PageObjects.dll",
+        "lib/netstandard2.0/SeleniumExtras.PageObjects.dll"
       ]
     },
     "Microsoft.CodeCoverage/17.1.0": {
@@ -2021,10 +2065,24 @@
         "nunit3testadapter.nuspec"
       ]
     },
-    "Selenium.WebDriver/4.39.0": {
-      "sha512": "LbiWOVW/PA/YVHKAXxMPLwwoupj3XLWKwjnGNkGFF0dG0rX2MJHDWgSf9WPSRWb9Msr3vTWFg0EsEAdNs68NiA==",
+    "Selenium.Support/4.40.0": {
+      "sha512": "YgHe6g5h7JIUuECo+a+WEhW1UtaUmQxoY383RWvWtzkiMSEEaRc3LXL3mG6pt4IjtwaN/h1QCzpQ1CFO2hT1qA==",
       "type": "package",
-      "path": "selenium.webdriver/4.39.0",
+      "path": "selenium.support/4.40.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.4.40.0.nupkg.sha512",
+        "selenium.support.nuspec"
+      ]
+    },
+    "Selenium.WebDriver/4.40.0": {
+      "sha512": "y7ESRFracAgUjQEieM42gPdkUEPvffrwmu5XZ4scGCjZ20nJKaJ+qcULegO01g4Chl5+IpVe61mdzXwPM91ddg==",
+      "type": "package",
+      "path": "selenium.webdriver/4.40.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2041,7 +2099,7 @@
         "runtimes/linux/native/selenium-manager",
         "runtimes/osx/native/selenium-manager",
         "runtimes/win/native/selenium-manager.exe",
-        "selenium.webdriver.4.39.0.nupkg.sha512",
+        "selenium.webdriver.4.40.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
     },
@@ -4211,11 +4269,13 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DotNetSeleniumExtras.PageObjects.Core >= 4.14.1",
       "Microsoft.NET.Test.Sdk >= 17.1.0",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
       "NUnit3TestAdapter >= 4.2.1",
-      "Selenium.WebDriver >= 4.39.0",
+      "Selenium.Support >= 4.40.0",
+      "Selenium.WebDriver >= 4.40.0",
       "coverlet.collector >= 3.1.2"
     ]
   },
@@ -4257,6 +4317,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "DotNetSeleniumExtras.PageObjects.Core": {
+            "target": "Package",
+            "version": "[4.14.1, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.1.0, )"
@@ -4273,9 +4337,13 @@
             "target": "Package",
             "version": "[4.2.1, )"
           },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.40.0, )"
+          },
           "Selenium.WebDriver": {
             "target": "Package",
-            "version": "[4.39.0, )"
+            "version": "[4.40.0, )"
           },
           "coverlet.collector": {
             "target": "Package",
