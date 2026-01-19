@@ -19,6 +19,7 @@ public class Tests
     }
 
     [Test]
+    [Description("Validate the navigation")]
     public void Test1()
     {
 
@@ -44,7 +45,7 @@ public class Tests
         Assert.Pass();
 
 
-    }
+    }    
 
     [TearDown]
     public void CloseDriver()
