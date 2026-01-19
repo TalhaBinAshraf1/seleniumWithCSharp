@@ -9,6 +9,7 @@
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/AutomationTask.runtimeconfig.json
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/AutomationTask.dll
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/AutomationTask.pdb
+/Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/SeleniumExtras.PageObjects.dll
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/Microsoft.TestPlatform.CoreUtilities.dll
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
@@ -20,6 +21,7 @@
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/Newtonsoft.Json.dll
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/NuGet.Frameworks.dll
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/nunit.framework.dll
+/Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/WebDriver.Support.dll
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/WebDriver.dll
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/System.Text.Encodings.Web.dll
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/System.Text.Json.dll

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "h7TBv7UF7wnW6HhqParYrW/UtRa/Erx01+++GnZwG/DRcSuM6dVl2G3JoFtm5Dn9PUCvqoBTXRxPDtuMml+VeQ==",
+  "dgSpecHash": "YBE6M5Ousk5d/m78HY2d/z1M1Ib+ZTJ879Qmpdl6no32+JEGU8zqxMbSNd4asEcEgEmxjdMg1Egw44ZaL7eMMg==",
   "success": true,
   "projectFilePath": "/Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/AutomationTask.csproj",
   "expectedPackageFiles": [
     "/Users/mirinfo/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
+    "/Users/mirinfo/.nuget/packages/dotnetseleniumextras.pageobjects.core/4.14.1/dotnetseleniumextras.pageobjects.core.4.14.1.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/microsoft.codecoverage/17.1.0/microsoft.codecoverage.17.1.0.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/microsoft.csharp/4.0.1/microsoft.csharp.4.0.1.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/microsoft.net.test.sdk/17.1.0/microsoft.net.test.sdk.17.1.0.nupkg.sha512",
@@ -18,7 +19,8 @@
     "/Users/mirinfo/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/nunit.analyzers/3.3.0/nunit.analyzers.3.3.0.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/nunit3testadapter/4.2.1/nunit3testadapter.4.2.1.nupkg.sha512",
-    "/Users/mirinfo/.nuget/packages/selenium.webdriver/4.39.0/selenium.webdriver.4.39.0.nupkg.sha512",
+    "/Users/mirinfo/.nuget/packages/selenium.support/4.40.0/selenium.support.4.40.0.nupkg.sha512",
+    "/Users/mirinfo/.nuget/packages/selenium.webdriver/4.40.0/selenium.webdriver.4.40.0.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/system.collections/4.0.11/system.collections.4.0.11.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/system.diagnostics.debug/4.0.11/system.diagnostics.debug.4.0.11.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/system.diagnostics.tools/4.0.1/system.diagnostics.tools.4.0.1.nupkg.sha512",
