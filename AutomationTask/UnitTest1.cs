@@ -15,9 +15,11 @@ public class Tests
         driver = new ChromeDriver();
         // Maximize the Window
         driver.Manage().Window.Maximize();
+        Console.WriteLine(" Execution Started !!!");
     }
 
     [Test]
+    [Description("Validate the navigation")]
     public void Test1()
     {
 
@@ -33,14 +35,17 @@ public class Tests
         Assert.Pass();
     }
 
-    //[Test]
-    //public void DropwodnTest() {
+    [Test]
+    public void DropdownTest()
+    {
+        driver.Navigate().GoToUrl("https://www.google.com");
+        driver.FindElement(By.Name("q")).SendKeys("Banglagesh");
 
-    //    //SelectElement = ctElement(driver.FindElement(By.CssSelector(""));
+        //SelectElement selectElement = new SelectElement(driver.FindElement(By.Id("")));
+        Assert.Pass();
 
 
-
-    //}
+    }    
 
     [TearDown]
     public void CloseDriver()
