@@ -10,7 +10,7 @@ namespace AutomationTask.Config
         public IWebDriver driver;
 
         [SetUp]
-        public void Setup()
+        public void beforeTest()
         {
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
@@ -18,7 +18,7 @@ namespace AutomationTask.Config
         }
 
         [TearDown]
-        public void TearDown()
+        public void afterTest()
         {
             driver.Quit();
         }

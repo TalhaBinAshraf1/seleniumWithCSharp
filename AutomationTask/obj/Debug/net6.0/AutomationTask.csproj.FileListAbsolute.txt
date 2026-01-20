@@ -9,7 +9,6 @@
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/AutomationTask.runtimeconfig.json
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/AutomationTask.dll
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/AutomationTask.pdb
-/Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/SeleniumExtras.PageObjects.dll
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/Microsoft.TestPlatform.CoreUtilities.dll
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
@@ -105,7 +104,4 @@
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/obj/Debug/net6.0/AutomationTask.pdb
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/obj/Debug/net6.0/AutomationTask.genruntimeconfig.cache
 /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/obj/Debug/net6.0/ref/AutomationTask.dll
-/Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/Allure.Net.Commons.dll
-/Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/Allure.NUnit.dll
-/Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/AspectInjector.Broker.dll
-/Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/MimeTypesMap.dll
+/Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/SeleniumExtras.WaitHelpers.dll

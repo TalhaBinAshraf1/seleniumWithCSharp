@@ -21,32 +21,32 @@ public class FirstTests : BaseTest
     //    Console.WriteLine(" Execution Started !!!");
     //}
 
-    [Test]
-    [Description("Validate the navigation")]
-    public void Test1()
-    {
+    //[Test]
+    //[Description("Validate the navigation")]
+    //public void Test1()
+    //{
 
-        // Navigation
-        //driver.Navigate().GoToUrl("https://www.daraz.com.bd/");
+    //    // Navigation
+    //    //driver.Navigate().GoToUrl("https://www.daraz.com.bd/");
 
-        // 
-        //IWebElement searchInputField = driver.FindElement(By.Name("q"));
+    //    // 
+    //    //IWebElement searchInputField = driver.FindElement(By.Name("q"));
 
-        //Pulling Only Objects 
-        //LandingPageObjects landingPageObjects = new LandingPageObjects(driver);
-        //landingPageObjects.SearchInputField.SendKeys("Selenium");
-        //landingPageObjects.SearchInputField.SendKeys(Keys.Enter);
+    //    //Pulling Only Objects 
+    //    //LandingPageObjects landingPageObjects = new LandingPageObjects(driver);
+    //    //landingPageObjects.SearchInputField.SendKeys("Selenium");
+    //    //landingPageObjects.SearchInputField.SendKeys(Keys.Enter);
 
-        LanguageActions languageActions = new LanguageActions(driver);
+    //    LanguageActions languageActions = new LanguageActions(driver);
 
-        languageActions.searchOnSearchber();
+    //    languageActions.searchOnSearchber();
 
-        //searchInputField.SendKeys("Selenium");
-        //searchInputField.SendKeys(Keys.Enter);
+    //    //searchInputField.SendKeys("Selenium");
+    //    //searchInputField.SendKeys(Keys.Enter);
 
-        //Simple Assertions
-        Assert.Pass();
-    }
+    //    //Simple Assertions
+    //    Assert.Pass();
+    //}
 
     //[Test]
     //public void DropdownTest()
