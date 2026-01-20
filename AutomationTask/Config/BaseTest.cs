@@ -7,7 +7,7 @@ namespace AutomationTask.Config
 {
     public class BaseTest
     {
-        protected IWebDriver driver;
+        public IWebDriver driver;
 
         [SetUp]
         public void Setup()
