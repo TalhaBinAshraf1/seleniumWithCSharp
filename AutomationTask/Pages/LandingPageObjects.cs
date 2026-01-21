@@ -1,26 +1,27 @@
-﻿using System;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 namespace AutomationTask.Pages
 {
-	public class LandingPageObjects
-	{
+    public class LandingPageObjects
+    {
         private readonly IWebDriver driver;
 
-        // Constructor assisn as field
-        public LandingPageObjects(IWebDriver driver) {
-
+        public LandingPageObjects(IWebDriver driver)
+        {
             this.driver = driver;
         }
 
-        // Landing page elements
-        public IWebElement SearchInputField => driver.FindElement(By.Name("q"));
+        public By LanguageButton => By.Id("topActionSwitchLang");
+        public By LoginButton => By.Id("anonLogin");
+        public By SignUpButton => By.Id("anonSignup");
 
-        public IWebElement Password => driver.FindElement(By.Id("password"));
+        public By EnglishLanguageButton => By.CssSelector("div.lzd-switch-item[data-lang='en']");
 
-        public IWebElement LoginButton => driver.FindElement(By.CssSelector("button[type='submit']"));
+        public By BanglaLanguageButton => By.CssSelector("div.lzd-switch-item[data-lang='bn']");
 
-        public IWebElement SuccessMessage => driver.FindElement(By.Id("flash"));
+        public By SearchInputField => By.Name("q");
+        public By MobileNumberInputField => By.XPath("(//input[@placeholder='Please enter your phone number'])[2]");
     }
 }
+
 

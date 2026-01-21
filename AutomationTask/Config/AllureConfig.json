@@ -1,0 +1,7 @@
+﻿{
+  "allure": {
+    "directory": "bin/Debug/net6.0/allure-result",
+    "links": [],
+    "title": "Automation Test Report"
+  }
+}

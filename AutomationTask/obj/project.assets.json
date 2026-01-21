@@ -2,6 +2,26 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Allure.Commons/3.5.0.73": {
+        "type": "package",
+        "dependencies": {
+          "MimeTypesMap": "1.0.8",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Allure.Commons.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.Commons.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.0/allureConfig.Template.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Allure.Net.Commons/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -61,18 +81,6 @@
         "type": "package",
         "build": {
           "build/netstandard1.0/coverlet.collector.targets": {}
-        }
-      },
-      "DotNetSeleniumExtras.PageObjects.Core/4.14.1": {
-        "type": "package",
-        "dependencies": {
-          "Selenium.WebDriver": "4.14.1"
-        },
-        "compile": {
-          "lib/net6.0/SeleniumExtras.PageObjects.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/SeleniumExtras.PageObjects.dll": {}
         }
       },
       "Microsoft.CodeCoverage/17.1.0": {
@@ -494,6 +502,18 @@
           }
         }
       },
+      "SeleniumExtras.WaitHelpers/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.0.0-beta2"
+        },
+        "compile": {
+          "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {}
+        }
+      },
       "System.Collections.Immutable/5.0.0": {
         "type": "package",
         "compile": {
@@ -584,6 +604,23 @@
     }
   },
   "libraries": {
+    "Allure.Commons/3.5.0.73": {
+      "sha512": "cqMlst9Za1TfOsgN2fWzMkdUeOTy07AZHaudOuRVAjTyBmUxDKOKxCwlkxO1Xw91ogsPCdXIJdduUtFFGw+Thw==",
+      "type": "package",
+      "path": "allure.commons/3.5.0.73",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "allure-net.png",
+        "allure.commons.3.5.0.73.nupkg.sha512",
+        "allure.commons.nuspec",
+        "content/allureConfig.Template.json",
+        "contentFiles/any/net45/allureConfig.Template.json",
+        "contentFiles/any/netstandard2.0/allureConfig.Template.json",
+        "lib/net45/Allure.Commons.dll",
+        "lib/netstandard2.0/Allure.Commons.dll"
+      ]
+    },
     "Allure.Net.Commons/2.14.1": {
       "sha512": "n3IOOzS91SYIPtjkhagiOURqP0o0AH2Y3tsvNGOw37dpZlzDcl/I55GHAvQkkyFvahrdoNdAVcT7buB/ai1jhg==",
       "type": "package",
@@ -698,22 +735,6 @@
         "coverlet-icon.png",
         "coverlet.collector.3.1.2.nupkg.sha512",
         "coverlet.collector.nuspec"
-      ]
-    },
-    "DotNetSeleniumExtras.PageObjects.Core/4.14.1": {
-      "sha512": "LwKjGyJKwaGO0pmPaWx0kOtJoDiKKYMpundXF3AwqqBcOI86gumvUpjqq/giL8zatUXdecL89wb0U/KZh03p7g==",
-      "type": "package",
-      "path": "dotnetseleniumextras.pageobjects.core/4.14.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "README.md",
-        "dotnetseleniumextras.pageobjects.core.4.14.1.nupkg.sha512",
-        "dotnetseleniumextras.pageobjects.core.nuspec",
-        "lib/net462/SeleniumExtras.PageObjects.dll",
-        "lib/net6.0/SeleniumExtras.PageObjects.dll",
-        "lib/netstandard2.0/SeleniumExtras.PageObjects.dll"
       ]
     },
     "Microsoft.CodeCoverage/17.1.0": {
@@ -1595,6 +1616,19 @@
         "selenium.webdriver.nuspec"
       ]
     },
+    "SeleniumExtras.WaitHelpers/1.0.2": {
+      "sha512": "de7m30nkZZLkfCncYBdluUpM27AR/Vkk4kiA4HRQbV+fZI3ps4qGIeJCuj8TAMXdMfQik5Rno8xPnFBIod+ebg==",
+      "type": "package",
+      "path": "seleniumextras.waithelpers/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll",
+        "seleniumextras.waithelpers.1.0.2.nupkg.sha512",
+        "seleniumextras.waithelpers.nuspec"
+      ]
+    },
     "System.Collections.Immutable/5.0.0": {
       "sha512": "FXkLXiK0sVVewcso0imKQoOxjoPAj42R8HtjjbSjVPAzwDfzoyoznWxgA3c38LDbN9SJux1xXoXYAhz98j7r2g==",
       "type": "package",
@@ -1778,14 +1812,15 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Allure.Commons >= 3.5.0.73",
       "Allure.NUnit >= 2.14.1",
-      "DotNetSeleniumExtras.PageObjects.Core >= 4.14.1",
       "Microsoft.NET.Test.Sdk >= 17.1.0",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
       "NUnit3TestAdapter >= 4.2.1",
       "Selenium.Support >= 4.40.0",
       "Selenium.WebDriver >= 4.40.0",
+      "SeleniumExtras.WaitHelpers >= 1.0.2",
       "coverlet.collector >= 3.1.2"
     ]
   },
@@ -1827,13 +1862,13 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Allure.Commons": {
+            "target": "Package",
+            "version": "[3.5.0.73, )"
+          },
           "Allure.NUnit": {
             "target": "Package",
             "version": "[2.14.1, )"
-          },
-          "DotNetSeleniumExtras.PageObjects.Core": {
-            "target": "Package",
-            "version": "[4.14.1, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -1858,6 +1893,10 @@
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[4.40.0, )"
+          },
+          "SeleniumExtras.WaitHelpers": {
+            "target": "Package",
+            "version": "[1.0.2, )"
           },
           "coverlet.collector": {
             "target": "Package",

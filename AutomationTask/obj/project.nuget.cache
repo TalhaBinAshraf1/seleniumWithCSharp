@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "22Hv27WO62qWK1FR2xNz1D/9j6b4AeAXJTzLvp9O5Z+/axG46WSjBrgLJJ0BVOiu8DvGcIpeOw/STrEMNcXBTg==",
+  "dgSpecHash": "CZHSMsCs7ZGqO/+JbV9O9EwCopnMpNJj0udfL2IY5ioCpxaK1vNjD5m+ez7Rm8M5U8AeShyNReb5JNawh610cg==",
   "success": true,
   "projectFilePath": "/Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/AutomationTask.csproj",
   "expectedPackageFiles": [
+    "/Users/mirinfo/.nuget/packages/allure.commons/3.5.0.73/allure.commons.3.5.0.73.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/allure.net.commons/2.14.1/allure.net.commons.2.14.1.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/allure.nunit/2.14.1/allure.nunit.2.14.1.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/aspectinjector/2.8.1/aspectinjector.2.8.1.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
-    "/Users/mirinfo/.nuget/packages/dotnetseleniumextras.pageobjects.core/4.14.1/dotnetseleniumextras.pageobjects.core.4.14.1.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/microsoft.codecoverage/17.1.0/microsoft.codecoverage.17.1.0.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/microsoft.net.test.sdk/17.1.0/microsoft.net.test.sdk.17.1.0.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
@@ -23,13 +23,14 @@
     "/Users/mirinfo/.nuget/packages/nunit3testadapter/4.2.1/nunit3testadapter.4.2.1.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/selenium.support/4.40.0/selenium.support.4.40.0.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/selenium.webdriver/4.40.0/selenium.webdriver.4.40.0.nupkg.sha512",
+    "/Users/mirinfo/.nuget/packages/seleniumextras.waithelpers/1.0.2/seleniumextras.waithelpers.1.0.2.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/system.collections.immutable/5.0.0/system.collections.immutable.5.0.0.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/Users/mirinfo/.nuget/packages/system.text.json/8.0.5/system.text.json.8.0.5.nupkg.sha512",
-    "/Users/mirinfo/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.31/microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512",
-    "/Users/mirinfo/.nuget/packages/microsoft.netcore.app.ref/6.0.31/microsoft.netcore.app.ref.6.0.31.nupkg.sha512"
+    "/Users/mirinfo/.nuget/packages/microsoft.netcore.app.ref/6.0.31/microsoft.netcore.app.ref.6.0.31.nupkg.sha512",
+    "/Users/mirinfo/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.31/microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512"
   ],
   "logs": []
 }

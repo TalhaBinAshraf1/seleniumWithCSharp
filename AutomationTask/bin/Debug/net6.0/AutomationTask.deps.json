@@ -8,18 +8,31 @@
     ".NETCoreApp,Version=v6.0": {
       "AutomationTask/1.0.0": {
         "dependencies": {
+          "Allure.Commons": "3.5.0.73",
           "Allure.NUnit": "2.14.1",
-          "DotNetSeleniumExtras.PageObjects.Core": "4.14.1",
           "Microsoft.NET.Test.Sdk": "17.1.0",
           "NUnit": "3.13.3",
           "NUnit.Analyzers": "3.3.0",
           "NUnit3TestAdapter": "4.2.1",
           "Selenium.Support": "4.40.0",
           "Selenium.WebDriver": "4.40.0",
+          "SeleniumExtras.WaitHelpers": "1.0.2",
           "coverlet.collector": "3.1.2"
         },
         "runtime": {
           "AutomationTask.dll": {}
+        }
+      },
+      "Allure.Commons/3.5.0.73": {
+        "dependencies": {
+          "MimeTypesMap": "1.0.9",
+          "Newtonsoft.Json": "13.0.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.Commons.dll": {
+            "assemblyVersion": "3.5.0.73",
+            "fileVersion": "3.5.0.73"
+          }
         }
       },
       "Allure.Net.Commons/2.14.1": {
@@ -57,17 +70,6 @@
         }
       },
       "coverlet.collector/3.1.2": {},
-      "DotNetSeleniumExtras.PageObjects.Core/4.14.1": {
-        "dependencies": {
-          "Selenium.WebDriver": "4.40.0"
-        },
-        "runtime": {
-          "lib/net6.0/SeleniumExtras.PageObjects.dll": {
-            "assemblyVersion": "4.14.1.0",
-            "fileVersion": "4.14.1.0"
-          }
-        }
-      },
       "Microsoft.CodeCoverage/17.1.0": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -411,6 +413,17 @@
           }
         }
       },
+      "SeleniumExtras.WaitHelpers/1.0.2": {
+        "dependencies": {
+          "Selenium.WebDriver": "4.40.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
+        }
+      },
       "System.Collections.Immutable/5.0.0": {},
       "System.Reflection.Metadata/1.6.0": {},
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
@@ -453,6 +466,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Allure.Commons/3.5.0.73": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cqMlst9Za1TfOsgN2fWzMkdUeOTy07AZHaudOuRVAjTyBmUxDKOKxCwlkxO1Xw91ogsPCdXIJdduUtFFGw+Thw==",
+      "path": "allure.commons/3.5.0.73",
+      "hashPath": "allure.commons.3.5.0.73.nupkg.sha512"
+    },
     "Allure.Net.Commons/2.14.1": {
       "type": "package",
       "serviceable": true,
@@ -480,13 +500,6 @@
       "sha512": "sha512-wuLDIDKD5XMt0A7lE31JPenT7QQwZPFkP5rRpdJeblyXZ9MGLI8rYjvm5fvAKln+2/X+4IxxQDxBtwdrqKNLZw==",
       "path": "coverlet.collector/3.1.2",
       "hashPath": "coverlet.collector.3.1.2.nupkg.sha512"
-    },
-    "DotNetSeleniumExtras.PageObjects.Core/4.14.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-LwKjGyJKwaGO0pmPaWx0kOtJoDiKKYMpundXF3AwqqBcOI86gumvUpjqq/giL8zatUXdecL89wb0U/KZh03p7g==",
-      "path": "dotnetseleniumextras.pageobjects.core/4.14.1",
-      "hashPath": "dotnetseleniumextras.pageobjects.core.4.14.1.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.1.0": {
       "type": "package",
@@ -585,6 +598,13 @@
       "sha512": "sha512-y7ESRFracAgUjQEieM42gPdkUEPvffrwmu5XZ4scGCjZ20nJKaJ+qcULegO01g4Chl5+IpVe61mdzXwPM91ddg==",
       "path": "selenium.webdriver/4.40.0",
       "hashPath": "selenium.webdriver.4.40.0.nupkg.sha512"
+    },
+    "SeleniumExtras.WaitHelpers/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-de7m30nkZZLkfCncYBdluUpM27AR/Vkk4kiA4HRQbV+fZI3ps4qGIeJCuj8TAMXdMfQik5Rno8xPnFBIod+ebg==",
+      "path": "seleniumextras.waithelpers/1.0.2",
+      "hashPath": "seleniumextras.waithelpers.1.0.2.nupkg.sha512"
     },
     "System.Collections.Immutable/5.0.0": {
       "type": "package",

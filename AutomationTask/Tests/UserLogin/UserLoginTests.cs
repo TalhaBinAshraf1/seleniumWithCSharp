@@ -5,7 +5,8 @@ namespace AutomationTask.Tests.UserLogin
 	{
 		public UserLoginTests()
 		{
-		}
-	}
+            //Log in with the registered account.
+        }
+    }
 }
 
