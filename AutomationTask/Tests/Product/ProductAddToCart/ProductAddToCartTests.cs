@@ -18,11 +18,11 @@ namespace AutomationTask.Tests.Product.ProductAddToCart
         public void ValidateProductAddToCartTests()
 		{
             UserLoginActions userLoginActions = new UserLoginActions(driver);
+            ProductAddToCartActions productAddToCartActions = new ProductAddToCartActions(driver);
 
             userLoginActions.ValidateUserAbleToLogin();
+            productAddToCartActions.ValidateUserAbleToAddProductToCartAndCartClean();
 
-          
-				 
         }
     }
 }
