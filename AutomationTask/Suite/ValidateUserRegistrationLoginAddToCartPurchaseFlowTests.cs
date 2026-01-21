@@ -20,7 +20,10 @@ namespace AutomationTask.Suite
             //Proceed to checkout.
             //Proceed to buy(place the order).
 
+            //dotnet test --filter Category=Smoke
+            //dotnet test --filter Category=Login
+
         }
-	}
+    }
 }
 

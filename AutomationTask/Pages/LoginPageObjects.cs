@@ -17,6 +17,8 @@ namespace AutomationTask.Pages
         public By PasswordField => By.XPath("//input[contains(@placeholder,'Please enter your password')]");
         public By LoginButton => By.XPath("//button[contains(text(),'LOGIN')]");
 
+        public By ProfileName => By.Id("myAccountTrigger");
+
 
     }
 }
