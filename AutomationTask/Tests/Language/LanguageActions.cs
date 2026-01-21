@@ -1,58 +1,53 @@
-﻿using System;
+﻿using Allure.NUnit.Attributes;
 using AutomationTask.Pages;
 using AutomationTask.Utils;
+using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
 
 namespace AutomationTask.Tests.Language
 {
-	public class LanguageActions
-	{
-
+    public class LanguageActions
+    {
         private readonly IWebDriver driver;
-        private readonly LandingPageObjects landingPageObjects;
-        private readonly UtilityActions utilityAction;
-
+        private readonly LandingPageObjects landingPage;
+        private readonly UtilityActions utility;
 
         public LanguageActions(IWebDriver driver)
         {
             this.driver = driver;
-            landingPageObjects = new LandingPageObjects(driver);
-            utilityAction = new UtilityActions(driver);
+            landingPage = new LandingPageObjects(driver);
+            utility = new UtilityActions(driver);
         }
 
-
-
-        //Change the site language from English to Bangla and verify that the language is updated.
+        [AllureStep("Change site language from English to Bangla and verify")]
         public void VerifyLanguageChangeEnglishToBangla()
         {
+            string placeholderEN = utility.GetAttribute(landingPage.SearchInputField,"placeholder");
+            Assert.That(placeholderEN, Is.EqualTo("Search in Daraz"));
 
-            var searchBoxPlaceHolderText = landingPageObjects.SearchFieldPlaceHolderEN.GetAttribute("placeholder");
-            Assert.That(searchBoxPlaceHolderText, Is.EqualTo("Search in Daraz"));
-            landingPageObjects.LanguageButton.Click();
-            landingPageObjects.BanglaLanguageButton.Click();
-            var searchBoxPlaceHolderTextInBN = landingPageObjects.SearchFieldPlaceHolderBN.GetAttribute("placeholder");
-            Assert.That(searchBoxPlaceHolderTextInBN, Is.EqualTo("দারাজ এ অনুসন্ধান"));
-            Thread.Sleep(2000);
+            utility.Click(landingPage.LanguageButton);
+            utility.Click(landingPage.BanglaLanguageButton);
+
+            utility.WaitForAttributeValue(landingPage.SearchInputField,"placeholder","দারাজ এ অনুসন্ধান");
+            string placeholderBN = utility.GetAttribute(landingPage.SearchInputField,"placeholder");
+            Assert.That(placeholderBN, Is.EqualTo("দারাজ এ অনুসন্ধান"));
         }
 
-        //Change the site language back from Bangla to English and verify that the language is updated.
+        [AllureStep("Change site language from Bangla to English and verify")]
         public void VerifyLanguageChangeBanglaToEnglish()
         {
-            var searchBoxPlaceHolderText = landingPageObjects.SearchFieldPlaceHolderBN.GetAttribute("placeholder");
-            Assert.That(searchBoxPlaceHolderText, Is.EqualTo("দারাজ এ অনুসন্ধান"));
-            Thread.Sleep(2000);
-            landingPageObjects.LanguageButton.Click();
-            Thread.Sleep(2000);
-            landingPageObjects.EnglishLanguageButton.Click();
-            var searchBoxPlaceHolderTextInEN = landingPageObjects.SearchFieldPlaceHolderEN.GetAttribute("placeholder");
-            Assert.That(searchBoxPlaceHolderTextInEN, Is.EqualTo("Search in Daraz"));
+            string placeholderBN = utility.GetAttribute(landingPage.SearchInputField,"placeholder");
+            Assert.That(placeholderBN, Is.EqualTo("দারাজ এ অনুসন্ধান"));
+
+            utility.Click(landingPage.LanguageButton);
+            utility.Click(landingPage.EnglishLanguageButton);
+
+            utility.WaitForAttributeValue(landingPage.SearchInputField,"placeholder","Search in Daraz");
+
+            string placeholderEN = utility.GetAttribute( landingPage.SearchInputField,"placeholder");
+
+            Assert.That(placeholderEN, Is.EqualTo("Search in Daraz"));
         }
-
-
-
-
-
     }
 }
 

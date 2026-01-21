@@ -1,32 +1,27 @@
-﻿using System;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 namespace AutomationTask.Pages
 {
-	public class LandingPageObjects{
+    public class LandingPageObjects
+    {
         private readonly IWebDriver driver;
 
-    // Constructor assisn as field
-    public LandingPageObjects(IWebDriver driver){
-        this.driver = driver;
+        public LandingPageObjects(IWebDriver driver)
+        {
+            this.driver = driver;
+        }
+
+        public By LanguageButton => By.Id("topActionSwitchLang");
+        public By LoginButton => By.Id("anonLogin");
+        public By SignUpButton => By.Id("anonSignup");
+
+        public By EnglishLanguageButton => By.CssSelector("div.lzd-switch-item[data-lang='en']");
+
+        public By BanglaLanguageButton => By.CssSelector("div.lzd-switch-item[data-lang='bn']");
+
+        public By SearchInputField => By.Name("q");
+        public By MobileNumberInputField => By.XPath("(//input[@placeholder='Please enter your phone number'])[2]");
     }
-
-    // Landing page elements
-
-    public IWebElement LanguageButton => driver.FindElement(By.Id("topActionSwitchLang"));
-    public IWebElement LoginButton => driver.FindElement(By.Id("anonLogin"));
-    public IWebElement SignUpButton => driver.FindElement(By.Id("anonSignup"));
-
-    // Lang
-    public IWebElement EnglishLanguageButton => driver.FindElement(By.CssSelector("div.lzd-switch-item[data-lang='en']"));
-    public IWebElement BanglaLanguageButton => driver.FindElement(By.CssSelector("div.lzd-switch-item[data-lang='bn']"));
-
-    public IWebElement SearchInputField => driver.FindElement(By.Name("q"));
-    public IWebElement SearchFieldPlaceHolderEN => driver.FindElement(By.XPath("//input[@placeholder='Search in Daraz']"));
-    public IWebElement SearchFieldPlaceHolderBN => driver.FindElement(By.XPath("//input[@placeholder='দারাজ এ অনুসন্ধান']"));
-
 }
 
-		
-}
 

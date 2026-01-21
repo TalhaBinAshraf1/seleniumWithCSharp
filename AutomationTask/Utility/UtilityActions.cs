@@ -8,37 +8,51 @@ namespace AutomationTask.Utils
     public class UtilityActions
     {
         private readonly IWebDriver driver;
+        private readonly WebDriverWait wait;
 
-       public UtilityActions(IWebDriver driver)
+        public UtilityActions(IWebDriver driver, int timeout = 10)
         {
             this.driver = driver;
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout));
         }
 
-        public void WaitForElementVisible(By locator, int timeout = 10)
+        public IWebElement WaitForElementVisible(By locator)
         {
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout));
-            wait.Until(ExpectedConditions.ElementIsVisible(locator));
+            return wait.Until(ExpectedConditions.ElementIsVisible(locator));
+        }
+
+        public IWebElement WaitForElementClickable(By locator)
+        {
+            return wait.Until(ExpectedConditions.ElementToBeClickable(locator));
         }
 
         public void Click(By locator)
         {
-            WaitForElementVisible(locator);
-            driver.FindElement(locator).Click();
+            WaitForElementClickable(locator).Click();
         }
 
         public void Type(By locator, string text)
         {
-            WaitForElementVisible(locator);
-            var element = driver.FindElement(locator);
+            var element = WaitForElementVisible(locator);
             element.Clear();
             element.SendKeys(text);
         }
 
         public string GetText(By locator)
         {
-            WaitForElementVisible(locator);
-            return driver.FindElement(locator).Text;
+            return WaitForElementVisible(locator).Text;
+        }
+
+        public string GetAttribute(By locator, string attributeName)
+        {
+            return WaitForElementVisible(locator).GetAttribute(attributeName);
+        }
+
+        public void WaitForAttributeValue(By locator, string attribute, string expectedValue)
+        {
+            wait.Until(driver =>
+                driver.FindElement(locator).GetAttribute(attribute) == expectedValue
+            );
         }
     }
-
 }
