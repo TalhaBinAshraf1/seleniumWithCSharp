@@ -1,28 +1,53 @@
 ﻿using System;
 using NUnit.Framework.Internal;
-using System.Diagnostics;
+using NUnit.Framework;
+using AutomationTask.Config;
+using AutomationTask.Tests.Language;
+using AutomationTask.Tests.Product.BuyProducts;
+using AutomationTask.Tests.Product.ProductAddToCart;
+using AutomationTask.Tests.UserLogin;
+using AutomationTask.Tests.UserRegistration;
 
-namespace AutomationTask.Suite
+namespace AutomationTask.Tests.E2E
 {
-	public class ValidateUserRegistrationLoginAddToCartPurchaseFlowTests
-	{
-		public ValidateUserRegistrationLoginAddToCartPurchaseFlowTests()
-		{
-            //Navigate to https://www.daraz.com.bd/.
-            //Change the site language from English to Bangla and verify that the language is updated.
-            //Change the site language back from Bangla to English and verify that the language is updated.
-            //Register a new user account.
-            //Log in with the registered account.
-            //Select a product category.
-            //Select a product from that category and add it to the cart.
-            //Select a different product category.
-            //Select a product from this second category and add it to the cart.
-            //Proceed to checkout.
-            //Proceed to buy(place the order).
+    [TestFixture]
+    [Category("E2E")]
+    [NonParallelizable]
+    public class ValidateLanguageChangeUserRegistrationLoginAddToCartPurchaseFlowTests : BaseTest
+    {
+        [Test, Order(1)]
+        public void ChangeLanguage()
+        {
+            new LanguageActions(driver).VerifyLanguageChangeEnglishToBangla();
+            new LanguageActions(driver).VerifyLanguageChangeBanglaToEnglish();
 
-            //dotnet test --filter Category=Smoke
-            //dotnet test --filter Category=Login
+        }
 
+        [Test, Order(2)]
+        public void UserRegistration()
+        {
+            new UserRegistrationActions(driver).ValidateUserAbleToRegisterSucessfully();
+        }
+
+        [Test, Order(3)]
+        public void UserLogin()
+        {
+            new UserLoginActions(driver).ValidateUserAbleToLogin();
+        }
+
+        [Test, Order(4)]
+        public void AddProductToCart()
+        {
+            new UserLoginActions(driver).ValidateUserAbleToLogin();
+            new ProductAddToCartActions(driver).ValidateUserAbleToAddProductToCartAndCartClean();
+        }
+
+        [Test, Order(5)]
+        public void BuyProduct()
+        {
+            new UserLoginActions(driver).ValidateUserAbleToLogin();
+            new ProductAddToCartActions(driver).ValidateUserAbleToAddProductToCart();
+            new BuyProductsActions(driver).VerifyUserAbleToPlaceOrder();
         }
     }
 }

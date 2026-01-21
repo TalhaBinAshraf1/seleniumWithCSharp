@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="e83fc927-9f7d-4af4-b54b-73a6abc363e9" name="@Talhas-MAC 2026-01-22 00:20:47" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-01-22T00:20:47.6344800+06:00" queuing="2026-01-22T00:20:47.6344800+06:00" start="2026-01-22T00:20:35.6364250+06:00" finish="2026-01-22T00:22:10.2079470+06:00" />
+  <TestSettings name="default" id="ffa90bb0-93fd-438b-96e9-5f1caa5f2f2c">
+    <Deployment runDeploymentRoot="_Talhas-MAC_2026-01-22_00_20_47" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="725651b4-308f-4967-b03f-8dd98bd3771e" testId="1301e785-bc89-e3bb-e68e-6a60258816ed" testName="ValidateProductAddToCartTests" computerName="Talhas-MAC" duration="00:00:26.9943940" startTime="2026-01-22T00:21:21.5309470+06:00" endTime="2026-01-22T00:21:48.5255600+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="725651b4-308f-4967-b03f-8dd98bd3771e" />
+    <UnitTestResult executionId="0c7fabfd-0962-4fe8-933a-22b3faf6e0ff" testId="1fa2a406-cb4f-af2a-42f8-265e627c86d9" testName="ValidateBuyProductsTests" computerName="Talhas-MAC" duration="00:00:34.0089650" startTime="2026-01-22T00:20:47.5210500+06:00" endTime="2026-01-22T00:21:21.5302960+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0c7fabfd-0962-4fe8-933a-22b3faf6e0ff">
+      <Output>
+        <StdOut>Cart Page Data &gt;&gt;&gt;&gt; ৳ 673
+Confirm Page Data &gt;&gt;&gt;&gt; ৳ 673</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="44e8d81e-7dd7-46c9-be7f-e6a7913d92e1" testId="da7345c1-3700-b7bb-4449-638a1c1092ff" testName="ValidateUserRegistration" computerName="Talhas-MAC" duration="00:00:12.4769020" startTime="2026-01-22T00:21:57.7016710+06:00" endTime="2026-01-22T00:22:10.1786730+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="44e8d81e-7dd7-46c9-be7f-e6a7913d92e1" />
+    <UnitTestResult executionId="2b1dd8e9-6a91-4e4b-9e28-ef6d97d88292" testId="5aea33f8-edbe-b724-de68-3c36e029ff00" testName="ValidateUserAbleToLoginTests" computerName="Talhas-MAC" duration="00:00:09.1754339" startTime="2026-01-22T00:21:48.5257970+06:00" endTime="2026-01-22T00:21:57.7013050+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2b1dd8e9-6a91-4e4b-9e28-ef6d97d88292" />
+    <UnitTestResult executionId="90207d44-a302-44d1-a4c5-d8739dbb5d25" testId="160cb21e-e499-598b-d7a6-39f6c6076bf6" testName="ValidateChangeLanguage" computerName="Talhas-MAC" duration="00:00:11.5856670" startTime="2026-01-22T00:20:35.9328690+06:00" endTime="2026-01-22T00:20:47.5185950+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="90207d44-a302-44d1-a4c5-d8739dbb5d25" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="ValidateBuyProductsTests" storage="/users/mirinfo/talha/talha_personal/automation_task_cantaloupe_inc/seleniumwithcsharp/automationtask/bin/debug/net6.0/automationtask.dll" id="1fa2a406-cb4f-af2a-42f8-265e627c86d9">
+      <Execution id="0c7fabfd-0962-4fe8-933a-22b3faf6e0ff" />
+      <TestMethod codeBase="/Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/AutomationTask.dll" adapterTypeName="executor://nunit3testexecutor/" className="AutomationTask.Tests.Product.BuyProducts.BuyProductsTests" name="ValidateBuyProductsTests" />
+    </UnitTest>
+    <UnitTest name="ValidateUserRegistration" storage="/users/mirinfo/talha/talha_personal/automation_task_cantaloupe_inc/seleniumwithcsharp/automationtask/bin/debug/net6.0/automationtask.dll" id="da7345c1-3700-b7bb-4449-638a1c1092ff">
+      <Execution id="44e8d81e-7dd7-46c9-be7f-e6a7913d92e1" />
+      <TestMethod codeBase="/Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/AutomationTask.dll" adapterTypeName="executor://nunit3testexecutor/" className="AutomationTask.Tests.UserRegistration.UserRegistrationTests" name="ValidateUserRegistration" />
+    </UnitTest>
+    <UnitTest name="ValidateChangeLanguage" storage="/users/mirinfo/talha/talha_personal/automation_task_cantaloupe_inc/seleniumwithcsharp/automationtask/bin/debug/net6.0/automationtask.dll" id="160cb21e-e499-598b-d7a6-39f6c6076bf6">
+      <Execution id="90207d44-a302-44d1-a4c5-d8739dbb5d25" />
+      <TestMethod codeBase="/Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/AutomationTask.dll" adapterTypeName="executor://nunit3testexecutor/" className="AutomationTask.Tests.Language.LaguageTests" name="ValidateChangeLanguage" />
+    </UnitTest>
+    <UnitTest name="ValidateUserAbleToLoginTests" storage="/users/mirinfo/talha/talha_personal/automation_task_cantaloupe_inc/seleniumwithcsharp/automationtask/bin/debug/net6.0/automationtask.dll" id="5aea33f8-edbe-b724-de68-3c36e029ff00">
+      <Execution id="2b1dd8e9-6a91-4e4b-9e28-ef6d97d88292" />
+      <TestMethod codeBase="/Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/AutomationTask.dll" adapterTypeName="executor://nunit3testexecutor/" className="AutomationTask.Tests.UserLogin.UserLoginTests" name="ValidateUserAbleToLoginTests" />
+    </UnitTest>
+    <UnitTest name="ValidateProductAddToCartTests" storage="/users/mirinfo/talha/talha_personal/automation_task_cantaloupe_inc/seleniumwithcsharp/automationtask/bin/debug/net6.0/automationtask.dll" id="1301e785-bc89-e3bb-e68e-6a60258816ed">
+      <Execution id="725651b4-308f-4967-b03f-8dd98bd3771e" />
+      <TestMethod codeBase="/Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/AutomationTask.dll" adapterTypeName="executor://nunit3testexecutor/" className="AutomationTask.Tests.Product.ProductAddToCart.ProductAddToCartTests" name="ValidateProductAddToCartTests" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="1301e785-bc89-e3bb-e68e-6a60258816ed" executionId="725651b4-308f-4967-b03f-8dd98bd3771e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1fa2a406-cb4f-af2a-42f8-265e627c86d9" executionId="0c7fabfd-0962-4fe8-933a-22b3faf6e0ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="da7345c1-3700-b7bb-4449-638a1c1092ff" executionId="44e8d81e-7dd7-46c9-be7f-e6a7913d92e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5aea33f8-edbe-b724-de68-3c36e029ff00" executionId="2b1dd8e9-6a91-4e4b-9e28-ef6d97d88292" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="160cb21e-e499-598b-d7a6-39f6c6076bf6" executionId="90207d44-a302-44d1-a4c5-d8739dbb5d25" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="5" executed="5" passed="5" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.2.0.0: Test execution started
+Running all tests in /Users/mirinfo/talha/Talha_Personal/Automation_Task_Cantaloupe_Inc/seleniumWithCSharp/AutomationTask/bin/Debug/net6.0/AutomationTask.dll
+   NUnit3TestExecutor discovered 5 of 5 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.2.0.0: Test execution complete
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="Talhas-MAC" outcome="Warning" timestamp="2026-01-22T00:21:21.5695210+06:00">
+        <Text>Cart Page Data &gt;&gt;&gt;&gt; ৳ 673
+Confirm Page Data &gt;&gt;&gt;&gt; ৳ 673
+</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

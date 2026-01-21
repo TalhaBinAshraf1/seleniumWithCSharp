@@ -6,17 +6,17 @@ namespace AutomationTask.Tests.UserRegistration
 {
     [TestFixture]
     [Category("Smoke")]
-    [AllureSuite("Language")]
-    [AllureEpic("ChangeLanguage")]
-    public class UserRegistrationTests : BaseTest
+    [Category("UserRegistration")]
+    [AllureSuite("User")]
+    [AllureEpic("UserRegistration")]
+
+    public class UserRegistrationTests: BaseTest
 	{
         [Test]
-        [Description("Validate that user can Register")]
-        [AllureFeature("Validate that user can Register")]
-
+        [Description("Validate that user can Register with PhoneNumber")]
+        [AllureFeature("Validate that user can Register with PhoneNumber")]
 
         public void ValidateUserRegistration(){
-
             UserRegistrationActions userRegistrationActions = new UserRegistrationActions(driver);
 
             userRegistrationActions.ValidateUserAbleToRegisterSucessfully();
