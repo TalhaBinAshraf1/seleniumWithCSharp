@@ -1,11 +1,29 @@
 ﻿using System;
+using Allure.NUnit.Attributes;
+using AutomationTask.Config;
+using AutomationTask.Tests.UserLogin;
+
 namespace AutomationTask.Tests.Product.ProductAddToCart
 {
-	public class ProductAddToCartTests
+    [TestFixture]
+    [Category("Smoke")]
+    [Category("Product AddToCart")]
+    [AllureSuite("Product")]
+    [AllureEpic("Validate User Able to Login")]
+    public class ProductAddToCartTests: BaseTest 
 	{
-		public ProductAddToCartTests()
+        [Test]
+        [Description("Validate that user can Login and able to Add products in Cart")]
+        [AllureFeature("Validate that user can Login and able to Add products in Cart")]
+        public void ValidateProductAddToCartTests()
 		{
-		}
-	}
+            UserLoginActions userLoginActions = new UserLoginActions(driver);
+
+            userLoginActions.ValidateUserAbleToLogin();
+
+          
+				 
+        }
+    }
 }
 

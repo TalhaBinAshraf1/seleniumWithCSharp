@@ -7,14 +7,14 @@ namespace AutomationTask.Tests.Language
     [TestFixture]
     [Category("Smoke")]
     [AllureSuite("Language")]
-    [AllureEpic("ChangeLanguage")]
+    [AllureEpic("Validate user able to ChangeLanguage")]
     public class LaguageTests : BaseTest
 	{
 		[Test]
 		[Description("Validate that user can Switch the language")]
         [AllureFeature("Validate that user can Switch the language")]
 
-        public void VarifyChangeLanguage() {
+        public void ValidateChangeLanguage() {
 
 			LanguageActions languageActions = new LanguageActions(driver);
 

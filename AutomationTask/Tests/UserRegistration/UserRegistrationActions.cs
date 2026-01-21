@@ -21,8 +21,6 @@ namespace AutomationTask.Tests.UserRegistration
 
         }
 
-        //Register a new user account.
-
         public void NavigateTORegistrationPage()
         {
             driver.Navigate().GoToUrl(Utility.TestData.RegistetionPageUrl);
@@ -84,7 +82,19 @@ namespace AutomationTask.Tests.UserRegistration
             utility.Click(registerPageObjects.SignUpButton);
         }
 
+        //CombindMethod
+        public void ValidateUserAbleToRegisterSucessfully() {
 
+           NavigateTORegistrationPage();
+           VerifyPageHader();
+           EnterMobileNumberInMobileField();
+           InputCode();
+           InputPassword();
+           InputFullName();
+           SelectDropdownValues();
+           ClickOnPromotionalSMS();
+           //ClickOnSignUp();
+        } 
 
 
     }

@@ -1,11 +1,26 @@
 ﻿using System;
+using Allure.NUnit.Attributes;
+using AutomationTask.Config;
+
 namespace AutomationTask.Tests.UserLogin
 {
-	public class UserLoginTests
-	{
-		public UserLoginTests()
+    [TestFixture]
+    [Category("Smoke")]
+    [Category("Login")]
+    [AllureSuite("Login")]
+    [AllureEpic("Validate User Able to Login")]
+    public class UserLoginTests: BaseTest
+    {
+        [Test]
+        [Description("Validate that user can Login")]
+        [AllureFeature("Validate that user can Login")]
+
+        public void ValidateUserAbleToLoginTests()
 		{
-            //Log in with the registered account.
+            UserLoginActions userLoginActions = new UserLoginActions(driver);
+
+            userLoginActions.ValidateUserAbleToLogin();
+			
         }
     }
 }

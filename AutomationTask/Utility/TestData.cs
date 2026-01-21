@@ -10,7 +10,7 @@
 
 
         //Credential
-        public static string Username = "01943753989";
+        public static string PhoneNumber = "01943753989";
         public static string Password = "talha@test1";
 
 
