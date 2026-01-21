@@ -7,22 +7,22 @@ namespace AutomationTask.Tests.Product.ProductAddToCart
 {
     [TestFixture]
     [Category("Smoke")]
-    [Category("Product AddToCart")]
+    [Category("LoginProductAddToCart")]
     [AllureSuite("Product")]
-    [AllureEpic("Validate User Able to Login")]
+    [AllureEpic("Validate User Able to do Add to Cart Products")]
+
     public class ProductAddToCartTests: BaseTest 
 	{
         [Test]
         [Description("Validate that user can Login and able to Add products in Cart")]
         [AllureFeature("Validate that user can Login and able to Add products in Cart")]
-        public void ValidateProductAddToCartTests()
-		{
+
+        public void ValidateProductAddToCartTests(){
             UserLoginActions userLoginActions = new UserLoginActions(driver);
             ProductAddToCartActions productAddToCartActions = new ProductAddToCartActions(driver);
 
             userLoginActions.ValidateUserAbleToLogin();
             productAddToCartActions.ValidateUserAbleToAddProductToCartAndCartClean();
-
         }
     }
 }
