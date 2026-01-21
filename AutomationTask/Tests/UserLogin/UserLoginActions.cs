@@ -8,7 +8,6 @@ namespace AutomationTask.Tests.UserLogin
 	public class UserLoginActions
 	{
         private readonly IWebDriver driver;
-        private readonly LandingPageObjects landingPageObjects;
         private readonly UtilityActions utility;
         private readonly LoginPageObjects loginPageObjects;
 
@@ -54,7 +53,7 @@ namespace AutomationTask.Tests.UserLogin
             Assert.That(ProfileText, Is.EqualTo("TALHATEST'S ACCOUNT"));
         }
 
-        //CombineMethode
+        //Combine Method
         public void ValidateUserAbleToLogin() {
 
             NavigateToLoginPage();
@@ -63,10 +62,7 @@ namespace AutomationTask.Tests.UserLogin
             InputUserPassword();
             ClickOnLoginbutton();
             VerifyUserAbleToLogiInSucessfully();
-
         }
-
-
 
     }
 }
