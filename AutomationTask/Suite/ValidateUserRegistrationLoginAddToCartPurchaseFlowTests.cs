@@ -20,19 +20,21 @@ namespace AutomationTask.Tests.E2E
         {
             new LanguageActions(driver).VerifyLanguageChangeEnglishToBangla();
             new LanguageActions(driver).VerifyLanguageChangeBanglaToEnglish();
-
+            extentTest.Info("User able to change Lanuage Sucessfully");
         }
 
         [Test, Order(2)]
         public void UserRegistration()
         {
             new UserRegistrationActions(driver).ValidateUserAbleToRegisterSucessfully();
+            extentTest.Info("User can Register with PhoneNumber");
         }
 
         [Test, Order(3)]
         public void UserLogin()
         {
             new UserLoginActions(driver).ValidateUserAbleToLogin();
+            extentTest.Info("User can Login with PhoneNumber");
         }
 
         [Test, Order(4)]
@@ -40,6 +42,7 @@ namespace AutomationTask.Tests.E2E
         {
             new UserLoginActions(driver).ValidateUserAbleToLogin();
             new ProductAddToCartActions(driver).ValidateUserAbleToAddProductToCartAndCartClean();
+            extentTest.Info("User able to Login and able to Add products in Cart");
         }
 
         [Test, Order(5)]
@@ -48,6 +51,7 @@ namespace AutomationTask.Tests.E2E
             new UserLoginActions(driver).ValidateUserAbleToLogin();
             new ProductAddToCartActions(driver).ValidateUserAbleToAddProductToCart();
             new BuyProductsActions(driver).VerifyUserAbleToPlaceOrder();
+            extentTest.Info("User able to Login and able to Add to cart and purchase products");
         }
     }
 }

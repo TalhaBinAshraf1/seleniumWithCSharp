@@ -1,52 +1,82 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using Allure.Commons;
-using OpenQA.Selenium.Support.UI;
+﻿using AventStack.ExtentReports;
 using NUnit.Framework;
-using System;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using AutomationTask.Utility;
+using System.IO;
 
 namespace AutomationTask.Config
 {
-
     public class BaseTest
     {
-        public IWebDriver driver;
+        protected IWebDriver driver;
+        protected ExtentTest extentTest;
+
+        [OneTimeSetUp]
+        public void OneTimeSetup()
+        {
+            ExtentReporterHelper.InitReport();
+        }
 
         [SetUp]
-        public void BeforeTest()
+        public void Setup()
         {
+            extentTest = ExtentReporterHelper.CreateTest(
+                TestContext.CurrentContext.Test.Name
+            );
+
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
-            driver.Navigate().GoToUrl(Utility.TestData.LandingPageUrl);
+            driver.Navigate().GoToUrl(TestData.LandingPageUrl);
+
+            extentTest.Info("Browser launched and URL opened");
         }
 
         [TearDown]
-        public void AfterTest()
+        public void TearDown()
         {
-            if (TestContext.CurrentContext.Result.Outcome.Status == NUnit.Framework.Interfaces.TestStatus.Failed)
+            var status = TestContext.CurrentContext.Result.Outcome.Status;
+
+            if (status == NUnit.Framework.Interfaces.TestStatus.Failed)
             {
-                TakeScreenshot();
+                string screenshot = TakeScreenshot();
+                extentTest.Fail("Test Failed")
+                          .AddScreenCaptureFromPath(screenshot);
             }
+            else
+            {
+                extentTest.Pass("Test Passed");
+            }
+
             driver.Quit();
         }
 
-
-        private void TakeScreenshot()
+        [OneTimeTearDown]
+        public void OneTimeTearDown()
         {
-            try
-            {
-                var screenshot = ((ITakesScreenshot)driver).GetScreenshot();
-                var bytes = screenshot.AsByteArray;
+            ExtentReporterHelper.FlushReport();
+        }
 
-                AllureLifecycle.Instance.AddAttachment(
-                    "Failure Screenshot",
-                    "image/png",
-                    bytes);
-            }
-            catch (Exception)
-            {
-                //Console.WriteLine("Allure Not Generated !!");
-            }
+        private string TakeScreenshot()
+        {
+            var screenshot = ((ITakesScreenshot)driver).GetScreenshot();
+
+            string path = Path.Combine(
+                TestContext.CurrentContext.WorkDirectory,
+                "Reports",
+                "Screenshots"
+            );
+
+            Directory.CreateDirectory(path);
+
+            string filePath = Path.Combine(
+                path,
+                $"{TestContext.CurrentContext.Test.Name}.png"
+            );
+
+            screenshot.SaveAsFile(filePath);
+            return filePath;
         }
     }
 }
+

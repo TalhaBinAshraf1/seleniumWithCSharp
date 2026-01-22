@@ -9,7 +9,6 @@ namespace AutomationTask.Tests.UserRegistration
 	public class UserRegistrationActions
 	{
         private readonly IWebDriver driver;
-        private readonly LandingPageObjects landingPageObjects;
         private readonly UtilityActions utility;
         private readonly RegisterPageObjects registerPageObjects;
 

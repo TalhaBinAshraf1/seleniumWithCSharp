@@ -1,5 +1,5 @@
 ﻿using System;
-using Allure.NUnit.Attributes;
+//using Allure.NUnit.Attributes;
 using AutomationTask.Config;
 using AutomationTask.Tests.UserLogin;
 
@@ -8,14 +8,14 @@ namespace AutomationTask.Tests.Product.ProductAddToCart
     [TestFixture]
     [Category("Smoke")]
     [Category("LoginProductAddToCart")]
-    [AllureSuite("Product")]
-    [AllureEpic("Validate User Able to do Add to Cart Products")]
+    //[AllureSuite("Product")]
+    //[AllureEpic("Validate User Able to do Add to Cart Products")]
 
     public class ProductAddToCartTests: BaseTest 
 	{
         [Test]
         [Description("Validate that user can Login and able to Add products in Cart")]
-        [AllureFeature("Validate that user can Login and able to Add products in Cart")]
+        //[AllureFeature("Validate that user can Login and able to Add products in Cart")]
 
         public void ValidateProductAddToCartTests(){
             UserLoginActions userLoginActions = new UserLoginActions(driver);
@@ -23,6 +23,7 @@ namespace AutomationTask.Tests.Product.ProductAddToCart
 
             userLoginActions.ValidateUserAbleToLogin();
             productAddToCartActions.ValidateUserAbleToAddProductToCartAndCartClean();
+            extentTest.Info("User able to Login and able to Add products in Cart");
         }
     }
 }
