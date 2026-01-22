@@ -1,4 +1,4 @@
-﻿using Allure.NUnit.Attributes;
+﻿//using Allure.NUnit.Attributes;
 using AutomationTask.Pages;
 using AutomationTask.Utils;
 using NUnit.Framework;
@@ -19,7 +19,7 @@ namespace AutomationTask.Tests.Language
             utility = new UtilityActions(driver);
         }
 
-        [AllureStep("Change site language from English to Bangla and verify")]
+        //[AllureStep("Change site language from English to Bangla and verify")]
         public void VerifyLanguageChangeEnglishToBangla()
         {
             string placeholderEN = utility.GetAttribute(landingPage.SearchInputField,"placeholder");
@@ -33,7 +33,7 @@ namespace AutomationTask.Tests.Language
             Assert.That(placeholderBN, Is.EqualTo("দারাজ এ অনুসন্ধান"));
         }
 
-        [AllureStep("Change site language from Bangla to English and verify")]
+        //[AllureStep("Change site language from Bangla to English and verify")]
         public void VerifyLanguageChangeBanglaToEnglish()
         {
             string placeholderBN = utility.GetAttribute(landingPage.SearchInputField,"placeholder");
