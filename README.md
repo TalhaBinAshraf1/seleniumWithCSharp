@@ -36,10 +36,10 @@ This Repository is created to automate e-com platform Daraz by using Selenium wi
           |── ExtentReporterHelper.cs
           └── UtilityActions.cs
 
-🔹 To run this project, make sure your machine has:
-   1. Should Have Visual Studio .NET 6.0 SDK installed
-      1.1. To verify use the command >>  ' dotnet --list-sdks '
-      1.2. If see this >> ' 6.0.xxx ' than you good to go. 
+🔹 To run this project, make sure your workstation has:
+   1. Should have Visual Studio .NET 6.0 SDK installed
+     <p> 1.1. To verify use the command >>  ' dotnet --list-sdks '</p>
+     <p> 1.2. If see this >> ' 6.0.xxx ' than you good to go. </p>
    2. Clone the Repository.
    3. Restore Dependencies.
    4. Build the Project.
